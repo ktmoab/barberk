@@ -89,14 +89,14 @@ export default function Home() {
       <div className="h-[72px] md:h-[100px]" aria-hidden />
 
       {/* HERO */}
-      <section className="relative w-full h-[10vh] sm:h-[40vh] md:h-[60vh] min-h-[190px] max-h-[400px] md:max-h-[700px] flex items-center justify-center">
+      <section className="relative w-full h-[30vh] sm:h-[40vh] md:h-[60vh] min-h-[290px] max-h-[400px] md:max-h-[700px] flex items-center justify-center">
         <div className="absolute inset-0">
           {/* Use fill + container so we can control object-fit per breakpoint */}
           <Image
             src="/images/thebarberk-hero.jpg"
             alt="Hero"
             fill
-            className="object-contain "
+            className="object-contain object-cover "
             priority
           />
           <div className="absolute inset-0 bg-black/40" />
