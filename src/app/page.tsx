@@ -363,7 +363,7 @@ export default function Home() {
     {/* Top right: MC image */}
     <div>
       <Image
-        src="/images/gallery-mc.jpg"
+        src="/images/gallery-mc.jpeg"
         alt="MC"
         width={600}
         height={340}
