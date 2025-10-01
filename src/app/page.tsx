@@ -96,7 +96,7 @@ export default function Home() {
             src="/images/thebarberk-hero.jpg"
             alt="Hero"
             fill
-            className="object-contain object-cover "
+            className="object-contain object-cover object-top "
             priority
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -251,7 +251,7 @@ export default function Home() {
         <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div>
             {/* image in fixed container so height is predictable on mobile */}
-            <div className="relative rounded-lg overflow-hidden w-full h-[240px] md:h-[340px]">
+            <div className="relative w-full max-w-[740px] aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/images/karwan-bw.jpeg"
                 alt="Karwan"
@@ -303,7 +303,7 @@ export default function Home() {
           </div>
 
           <div className="order-1 md:order-2">
-            <div className="relative rounded-lg overflow-hidden w-full h-[240px] md:h-[340px]">
+            <div className="relative w-full max-w-[740px] aspect-[3/3] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/images/katerina-bw.jpeg"
                 alt="Katerina"
@@ -317,7 +317,7 @@ export default function Home() {
         {/* OM OSS */}
         <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div>
-            <div className="relative rounded-lg overflow-hidden w-full h-[240px] md:h-[340px]">
+            <div className="relative w-full max-w-[740px] aspect-[3/3] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/images/about-color.jpeg"
                 alt="Om oss"
