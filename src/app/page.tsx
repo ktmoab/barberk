@@ -89,7 +89,7 @@ export default function Home() {
       <div className="h-[72px] md:h-[100px]" aria-hidden />
 
       {/* HERO */}
-      <section className="relative w-full h-[31vh] sm:h-[40vh] md:h-[60vh] min-h-[190px] max-h-[400px] md:max-h-[700px] flex items-center justify-center">
+      <section className="relative w-full h-[10vh] sm:h-[40vh] md:h-[60vh] min-h-[190px] max-h-[400px] md:max-h-[700px] flex items-center justify-center">
         <div className="absolute inset-0">
           {/* Use fill + container so we can control object-fit per breakpoint */}
           <Image
