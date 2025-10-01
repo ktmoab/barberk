@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Color Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Custom font variables (if you want to use them in Tailwind config, otherwise ignore) */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Base body styling */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings and special font */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive helper classes for extra small screens */
+@layer utilities {
+  @variants responsive {
+    .xs\:h-\[110px\] { height: 110px; }
+    .xs\:h-\[150px\] { height: 150px; }
+    .xs\:h-\[180px\] { height: 180px; }
+    .xs\:h-\[220px\] { height: 220px; }
+  }
+}
+
+/* Ensure images don't overflow their containers on mobile */
+img, .next-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Section paddings for mobile */
+section {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
